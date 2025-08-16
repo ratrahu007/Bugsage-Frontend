@@ -1,0 +1,104 @@
+/* src/components/Header/Header.module.css */
+.header {
+  background-color: #1A1D24; /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  padding: 0 2rem;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  background-image: url('../images/bugsage-logo.png');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav a {
+  color:white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+/* Underline effect on hover */
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #150b82ab;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.authButtons button {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginBtn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #0d6efd;
+}
+
+.loginBtn:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.signupBtn {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.signupBtn:hover {
+  opacity: 0.9;
+}

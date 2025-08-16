@@ -1,0 +1,120 @@
+.signUpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+  padding: 2rem;
+  background-color: #121212;
+}
+
+.formWrapper {
+  background-color: #1a1a1a;
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: #adb5bd;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.methodSwitcher {
+  display: flex;
+  background-color: #2c2c2c;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  padding: 4px;
+}
+
+.methodSwitcher button {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  background-color: transparent;
+  color: #adb5bd;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.methodSwitcher button.active {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.readOnlyInput {
+  background-color: #3a3a3a !important;
+  cursor: not-allowed;
+  color: #9ca3af !important;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #0b5ed7;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: #f87171;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}

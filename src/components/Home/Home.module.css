@@ -1,0 +1,24 @@
+/* src/components/Home/Home.module.css */
+.hero {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #adb5bd;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.ctaButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
